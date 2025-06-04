@@ -6,43 +6,6 @@
 
 jQuery(document).ready(function ($) {});
 
-/***/ }),
-
-/***/ 239:
-/***/ (() => {
-
-jQuery(document).ready(function ($) {});
-
-/***/ }),
-
-/***/ 124:
-/***/ (() => {
-
-jQuery(document).ready(function ($) {
-  // function HideRange() {
-  //     $('.cab-range-item-single[data-id]').each(function () {
-  //         var dataId = parseInt($(this).data('id')); // Get the value of data-id as an integer
-  //
-  //         // Check if data-id is greater than 3
-  //         if (dataId > 3) {
-  //             $(this).hide(); // Hide the element
-  //         }
-  //     });
-  //     $(".cab-showmore-posts-txt").click(function () {
-  //         $('.cab-showmore-posts').hide();
-  //         $('.cab-range-item-single[data-id]').each(function () {
-  //             var dataId = parseInt($(this).data('id')); // Get the value of data-id as an integer
-  //
-  //             // Check if data-id is greater than 3
-  //             if (dataId > 3) {
-  //                 $(this).show(); // Show the element
-  //             }
-  //         });
-  //     });
-  // }
-  // HideRange();
-});
-
 /***/ })
 
 /******/ 	});
@@ -108,12 +71,6 @@ var __webpack_exports__ = {};
 "use strict";
 /* harmony import */ var _blocks_hero_script__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34);
 /* harmony import */ var _blocks_hero_script__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_blocks_hero_script__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _blocks_list_script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(239);
-/* harmony import */ var _blocks_list_script__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_list_script__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _blocks_range_list_script__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(124);
-/* harmony import */ var _blocks_range_list_script__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_blocks_range_list_script__WEBPACK_IMPORTED_MODULE_2__);
-
-
 
 })();
 

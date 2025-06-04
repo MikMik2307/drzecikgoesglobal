@@ -1,12 +1,27 @@
 {
-  "name": "cab/hero",
-  "title": "Hero",
-  "description": "Hero block",
+  "name": "wbdm/hero",
+  "title": "Hero ACF block",
+  "description": "Hero ACF block",
   "category": "formatting",
   "icon": "text-page",
-  "keywords": ["Hero"],
+  "keywords": ["hero"],
   "acf": {
-    "mode": "auto",
+    "mode": "preview",
     "renderTemplate": "template.php"
+  },
+  "supports": {
+    "color": {
+      "text": true,
+      "background": false
+    },
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "attributes": {
+    "fontSize": {
+      "type": "string",
+      "default": "20px"
+    }
   }
 }

@@ -1,5 +1,5 @@
 <?php
-    function cab_fields_example_block() {
+    function wbdm_fields_example_block() {
 
         acf_add_local_field_group(array(
             'key' => 'group 1',
@@ -73,7 +73,7 @@
                     array(
                         'param' => 'block',
                         'operator' => '==',
-                        'value' => 'cab/example',
+                        'value' => 'wbdm/example',
                     ),
                 ),
             ),
@@ -88,4 +88,4 @@
             'show_in_rest' => 0,
         ));
     }
-    add_action('acf/init', __NAMESPACE__ .'\cab_fields_example_block');
+    add_action('acf/init', __NAMESPACE__ .'\wbdm_fields_example_block');

@@ -1,35 +1,33 @@
 <?php
-    $subtitle  = get_field( 'subtitle' );
-    $title = get_field('title');
-    $button_txt = get_field('button_txt');
-    $button_link = get_field('button_link');
-    $img_top = get_field('img_top');
-    $img_bottom = get_field('img_bottom');
-    $wrapper_attributes = get_block_wrapper_attributes([
-        'class' => 'HeroSection',
-    ]);
+    $img   = get_field( 'about_img' );
+    $title = get_field('about_title');
+    $description = get_field('about_description');
+    $wrapper_attributes = get_block_wrapper_attributes();
+    $icon = WBDM_URL . 'img/test.png';
 ?>
 <section <?php echo $wrapper_attributes; ?>>
-    <div class="container cab-hero-container">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-8 col-xs-12 order-lg-1 order-md-1 order-2 cab-col-hero-content">
-                <p class="cab-hero-subtitle-txt">
-                    <?php echo $subtitle ?>
-                </p>
-                <h1 class="cab-hero-title-txt">
-                    <?php echo $title; ?>
-                </h1>
-                <a href="<?php echo esc_url($button_link); ?>" class="cab-btn">
-                    <p><?php echo $button_txt ?></p>
-                </a>
+            <div class="col-md-10 offset-md-1 col-lg-5 offset-lg-1">
+                <div class="oab-example-block__img">
+                    <img src="<?php echo esc_url($img); ?>" alt="about_company">
+                </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 order-lg-2 order-md-2 order-1">
-                <div class="cab-hero-img-top">
-                    <img src="<?php echo esc_url($img_top); ?>">
+            <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 col-xl-5 offset-xl-1">
+                <h1 class="oab-example-block__title"><?php echo esc_html($title); ?></h1>
+                <div class="oab-example-block__description">
+                    <?php echo wp_kses($description, array(
+                            'a' => array(
+                                'href'  => true,
+                                'title' => true,
+                            ),
+                            'div'     => array(),
+                            'p'     => array(),
+                    ))
+                    ?>
                 </div>
-                <div class="cab-hero-img-bottom">
-                    <img src="<?php echo esc_url($img_bottom); ?>">
-                </div>
+                <a href="#" id="oab-example-block__btn" class="oab-example-block__btn"><?php echo esc_html__( 'Read more', 'odigo-acf-blocks' ) ?><img class="oab-test-block__icon" src="<?php echo esc_url($icon); ?>" alt="icon"></a>
             </div>
         </div>
+    </div>
 </section>

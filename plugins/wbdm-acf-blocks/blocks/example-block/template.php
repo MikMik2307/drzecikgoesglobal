@@ -3,7 +3,7 @@
     $title = get_field('about_title');
     $description = get_field('about_description');
     $wrapper_attributes = get_block_wrapper_attributes();
-    $icon = CAB_URL . 'img/test.png';
+    $icon = WBDM_URL . 'img/test.png';
 ?>
 <section <?php echo $wrapper_attributes; ?>>
     <div class="container">
