@@ -107,7 +107,6 @@
 }
 @media only screen and (max-width: 900px){
     .wp-block-cab-hero {
-        background: url("img/Hero-mobile.png") no-repeat;
         background-position-x: -3%;
         background-position-y: 28%;
         height: 100%;
@@ -176,7 +175,6 @@
 }
 @media only screen and (min-width: 600px) and (max-width: 900px){
     .wp-block-cab-hero {
-        background: url("img/HeroBackground.png") no-repeat !important;
         padding-bottom: 145px;
         padding-top:80px !important;
         .cab-hero-img-top {

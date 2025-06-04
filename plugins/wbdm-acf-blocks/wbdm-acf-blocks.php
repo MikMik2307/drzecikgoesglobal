@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name:       C2C ACF Blocks
+ * Plugin Name:       WBDM ACF Blocks
  * Plugin URI:        https://www.webdevdm.pl/
  * Description:       Plugin containing ACF Gutenberg blocks
  * Version:           2.0.0
  * Author:            Webdevdm
  * Author URI:        https://www.webdevdm.pl/
- * Text Domain:       c2c-acf-blocks
+ * Text Domain:       wbdm-acf-blocks
  */
 
-namespace Webdevdm\C2C_ACF_Blocks;
+namespace Webdevdm\WBDM_ACF_Blocks;
 
 if (!defined('CAB_PATH')) {
     define('CAB_PATH', plugin_dir_path(__FILE__));
@@ -38,7 +38,7 @@ add_action('admin_enqueue_scripts', __NAMESPACE__ . '\register_scripts');
 /* Loading texdomain */
 function CAB_load_plugin_textdomain()
 {
-    load_plugin_textdomain('c2c-acf-blocks', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+    load_plugin_textdomain('wbdm-acf-blocks', false, dirname(plugin_basename(__FILE__)) . '/languages/');
 }
 
 add_action('init', __NAMESPACE__ . '\\CAB_load_plugin_textdomain');
