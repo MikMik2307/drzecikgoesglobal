@@ -94,7 +94,7 @@
                     array(
                         'param' => 'block',
                         'operator' => '==',
-                        'value' => 'wbdm/example',
+                        'value' => 'wbdm/hero',
                     ),
                 ),
             ),

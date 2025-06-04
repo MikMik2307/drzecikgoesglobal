@@ -1,2 +1,25 @@
-.wp-block-oab-example {
+@import 'src/sass/variables';
+
+.wp-block-wbdm-hero {
+  .wbdm-hero-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wbdm-text__title{
+    font-family:$fontFamily;
+    color: $mainColor;
+    font-size: 3.333vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 125%;
+  }
+  .wbdm-text__subtitle{
+    font-family:$fontFamilyAdditional;
+    color: $additionalColorWhite;
+    font-size: 1.667vw;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
 }
