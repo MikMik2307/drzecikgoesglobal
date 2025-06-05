@@ -1,0 +1,49 @@
+@import 'src/sass/variables';
+
+.wp-block-wbdm-about {
+  background-color: #2C2C2C;
+  .wbdm-about-img__img{
+    width: 44.792vw;
+    position: relative;
+    margin-top: -30%;
+    margin-left: -20%;
+  }
+  .wbdm-about-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .wbdm-about-text__title{
+      font-family:$fontFamily;
+      color: $mainColor;
+      font-size: 3.333vw;
+      font-weight: 800;
+      text-transform: capitalize;
+      line-height: 125%;
+    }
+    .wbdm-about-text__subtitle{
+      font-family:$fontFamilyAdditional;
+      color: $additionalColorWhite;
+      font-size: 1.667vw;
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+    .wbdm-about-text__content{
+      font-family:$fontFamilyAdditional;
+      font-size: 1.111vw;
+      color: $additionalColorWhite;
+      font-weight: 200;
+    }
+    .wbdm-about-button{
+      background-color: $mainColor;
+      font-family: $fontFamilyAdditional;
+      font-size: 1.667vw;
+      font-weight: 800;
+      color: #242424;
+      text-transform: uppercase;
+      border-radius: 50px;
+      padding: 1.389vw 2.083vw;
+      width: fit-content;
+    }
+  }
+}
