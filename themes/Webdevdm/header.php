@@ -26,20 +26,6 @@ defined('ABSPATH') || exit;
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 	<header id="wrapper-navbar" class="header__desktop">
 		<div class="container-header justify-content-between align-items-center">
-            <div class="row">
-                <div class="col-12">
-                    <div class="menu__decoration">
-                        <img src="<?= get_stylesheet_directory_uri() ?>/src/assets/img/Decoration.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="menu__logo">
-                        <img src="<?= get_stylesheet_directory_uri() ?>/src/assets/img/MAD-HATTERS.png">
-                    </div>
-                </div>
-            </div>
 			<nav id="main-nav" class="header__navbar navbar navbar-expand-xl" aria-labelledby="main-nav-label">
 				<button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"

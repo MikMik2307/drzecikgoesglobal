@@ -1,6 +1,9 @@
 @import 'src/sass/variables';
 
 .wp-block-wbdm-hero {
+  position: absolute;
+  top: 0;
+  width: 100%;
   .wbdm-hero-container{
     height: 100%;
     display: flex;
