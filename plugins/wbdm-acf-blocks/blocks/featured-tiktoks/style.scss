@@ -1,0 +1,33 @@
+@import 'src/sass/variables';
+
+.wp-block-wbdm-featured-tiktoks {
+  background-color: #242424;
+  padding-bottom: 80px;
+  .wbdm-featured-tiktoks-title-container {
+    padding-bottom: 50px;
+  }
+  .wbdm-featured-tiktoks-title__text{
+    color: $mainColor;
+    font-weight: 800;
+    font-size: 3.333vw;
+    line-height: 125%;
+    text-align: center;
+  }
+  .wbdm-featured-tiktoks-single-tiktok{
+    justify-items: center;
+  }
+  .tiktok-embed {
+    width: 320px !important;   /* fixed width */
+    height: 760px !important;  /* fixed height */
+    max-width: none !important; /* override any max-width */
+    min-width: none !important; /* override any min-width */
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    background-color: white;
+  }
+  .tiktok-thumbnails > div:first-child {
+    display: none;
+  }
+
+}

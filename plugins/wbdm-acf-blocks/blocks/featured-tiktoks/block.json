@@ -1,0 +1,27 @@
+{
+  "name": "wbdm/featured-tiktoks",
+  "title": "Featured TikToks ACF block",
+  "description": "Featured TikToks ACF block",
+  "category": "formatting",
+  "icon": "text-page",
+  "keywords": ["featured TikToks"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "template.php"
+  },
+  "supports": {
+    "color": {
+      "text": true,
+      "background": false
+    },
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "attributes": {
+    "fontSize": {
+      "type": "string",
+      "default": "20px"
+    }
+  }
+}

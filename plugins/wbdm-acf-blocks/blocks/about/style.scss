@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 100%;
+    justify-content: center;
 
     .wbdm-about-text__title{
       font-family:$fontFamily;
