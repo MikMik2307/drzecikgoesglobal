@@ -1,0 +1,18 @@
+@import 'src/sass/variables';
+
+.wp-block-wbdm-featured-youtube {
+  padding: 80px 0;
+  .wbdm-featured-videos-title-container {
+    .wbdm-featured-videos-title__text {
+      text-align: center;
+      font-family: $fontFamily;
+      color: $additionalColorWhite;
+      font-size: 3.333vw;
+      font-weight: 800;
+      line-height: 125%;
+    }
+  }
+  .wbdm-featured-videos-thumbnails-container{
+    margin: 80px auto;
+  }
+}

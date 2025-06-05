@@ -1,6 +1,25 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 140:
+/***/ (() => {
+
+jQuery(document).ready(function ($) {
+  $('.youtube-thumb-wrapper').on('click', function () {
+    var videoId = $(this).data('video-id');
+    var iframe = $('<iframe>', {
+      width: '100%',
+      height: '100%',
+      frameborder: 0,
+      allowfullscreen: true,
+      src: 'https://www.youtube.com/embed/' + videoId + '?autoplay=0&rel=0'
+    });
+    $(this).empty().append(iframe);
+  });
+});
+
+/***/ }),
+
 /***/ 34:
 /***/ (() => {
 
@@ -124,6 +143,9 @@ var __webpack_exports__ = {};
 /* harmony import */ var _blocks_hero_script__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_blocks_hero_script__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _blocks_socials_script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(38);
 /* harmony import */ var _blocks_socials_script__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_socials_script__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _blocks_featured_youtube_script__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(140);
+/* harmony import */ var _blocks_featured_youtube_script__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_blocks_featured_youtube_script__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 

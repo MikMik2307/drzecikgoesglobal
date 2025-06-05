@@ -1,0 +1,27 @@
+{
+  "name": "wbdm/featured-youtube",
+  "title": "Featured Youtube ACF block",
+  "description": "Featured Youtube ACF block",
+  "category": "formatting",
+  "icon": "text-page",
+  "keywords": ["featured Youtube"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "template.php"
+  },
+  "supports": {
+    "color": {
+      "text": true,
+      "background": false
+    },
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "attributes": {
+    "fontSize": {
+      "type": "string",
+      "default": "20px"
+    }
+  }
+}
