@@ -1,0 +1,26 @@
+@import 'src/sass/variables';
+
+.wp-block-wbdm-socials {
+  background-color: #242424;
+  padding: 100px 0px;
+  .wbdm-socialmedia-tiles{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .wbdm-socialmedia-tile{
+    justify-items: center;
+  }
+  .wbdm-socialmedia-tile-followers-count{
+    font-family: $fontFamilyAdditional;
+    font-weight: 800;
+    font-size: 6.667vw;
+    color: $additionalColorWhite;
+    text-transform: uppercase;
+  }
+  .wbdm-socialmedia-tile-text{
+    font-family: $fontFamilyAdditional;
+    font-weight: 200;
+    font-size: 1.667vw;
+    color: $additionalColorWhite;
+  }
+}
