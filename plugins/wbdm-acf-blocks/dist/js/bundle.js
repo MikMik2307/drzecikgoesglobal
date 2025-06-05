@@ -6,6 +6,13 @@
 
 jQuery(document).ready(function ($) {});
 
+/***/ }),
+
+/***/ 38:
+/***/ (() => {
+
+jQuery(document).ready(function ($) {});
+
 /***/ })
 
 /******/ 	});
@@ -71,6 +78,9 @@ var __webpack_exports__ = {};
 "use strict";
 /* harmony import */ var _blocks_hero_script__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34);
 /* harmony import */ var _blocks_hero_script__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_blocks_hero_script__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _blocks_socials_script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(38);
+/* harmony import */ var _blocks_socials_script__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_socials_script__WEBPACK_IMPORTED_MODULE_1__);
+
 
 })();
 

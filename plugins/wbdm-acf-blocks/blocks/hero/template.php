@@ -21,4 +21,3 @@
         </div>
     </div>
 </section>
-<div style="height: 50px; background-color: <?php echo $background_color; ?>;"></div>
