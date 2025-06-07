@@ -23,13 +23,20 @@ require __DIR__ . '/index.php';
 
 function register_scripts()
 {
-    wp_enqueue_style('WBDM-bundle', WBDM_URL . 'dist/css/bundle.css');
-    wp_enqueue_script('WBDM-bundle', WBDM_URL . 'dist/js/bundle.js', ['jquery', 'acf']);
-	wp_localize_script( 'WBDM-bundle', 'WBDM_loc',
-		array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+	// Main plugin styles and scripts
+	wp_enqueue_style('WBDM-bundle', WBDM_URL . 'dist/css/bundle.css');
+	wp_enqueue_script('WBDM-bundle', WBDM_URL . 'dist/js/bundle.js', ['jquery', 'acf']);
+	wp_localize_script('WBDM-bundle', 'WBDM_loc', array(
+		'ajax_url' => admin_url('admin-ajax.php')
+	));
+
+	// Google Fonts
 	wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-	//if block is present
-    $id = get_the_ID();
+
+	// ✅ Slick Carousel
+	wp_enqueue_style('slick-carousel', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', [], '1.8.1');
+	wp_enqueue_style('slick-carousel-theme', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', ['slick-carousel'], '1.8.1');
+	wp_enqueue_script('slick-carousel', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', ['jquery'], '1.8.1', true);
 }
 
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\register_scripts');
