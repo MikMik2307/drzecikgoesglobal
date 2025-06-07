@@ -14,55 +14,26 @@ $container = get_theme_mod('understrap_container_type');
 ?>
 
 <footer class="footer">
-		<div class="container-xl">
+		<div class="container-fluid">
 			<div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="footer__logo">
-                        <img class="footer__logo__img" src="<?= get_stylesheet_directory_uri() ?>/src/assets/img/MAD-HATTERS-FOOTER.svg">
-                        <p class="footer__desc">Be better, be cooler, be a Mad <br> Hatter and sustainably matter.</p>
-                        <img src="<?= get_stylesheet_directory_uri() ?>/src/assets/img/Decoration.svg">
-                        <p class="footer__copy copy__mobile">Copyright 2012 Mad Hatters, Inc. Terms & Privacy</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-2"></div>
-				<div class="col-12 col-lg-2">
-                    <p class="footer__nav__title shop__here_title" style="position:relative;">Shop here</p>
+				<div class="col-12">
 					<nav class="footer__nav">
 						<?php
 						wp_nav_menu(
 							array(
-								'theme_location' => 'Footer-Shop-here',
-								'menu_class'     => 'footer-menu d-flex flex-column flex-lg-col',
-								'fallback_cb'    => '',
-								'menu_id'        => 'Footer-Shop-here',
-								'depth'          => 2,
+								'theme_location'  => 'Main-Menu-Home',
+								'container_id'    => 'navbarNavDropdown',
+								'menu_class'      => 'navbar-nav header__nav m-0 p-lg-0 align-items-lg-center',
+								'fallback_cb'     => '',
+								'menu_id'         => 'Main-Menu',
+								'depth'           => 2,
+								'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 							)
 						);
 						?>
 					</nav>
 				</div>
-                <div class="col-12 col-lg-2">
-                    <nav class="footer__nav">
-                        <p class="footer__nav__title the__legals_title">The legals</p>
-                        <?php
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'Footer-The-legals',
-                                'menu_class'     => 'footer-menu d-flex flex-column flex-lg-col',
-                                'fallback_cb'    => '',
-                                'menu_id'        => 'footer-the-legals',
-                                'depth'          => 2,
-                            )
-                        );
-                        ?>
-                    </nav>
-                </div>
 			</div>
-            <div class="row">
-                <div class="col-12">
-                    <p class="footer__copy copy__desktop">Copyright 2012 Mad Hatters, Inc. Terms & Privacy</p>
-                </div>
-            </div>
 		</div>
 </footer>
 <?php wp_footer(); ?>

@@ -103,120 +103,28 @@
 }
 // footer
 .footer{
-  background-color: #23242C;
-  padding-top: 140px;
-  padding-bottom: 129px;
-  .footer__desc{
-    margin-top: 32px;
-    color: white;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    line-height: 32px;
-    word-wrap: break-word;
-    margin-left: -16px;
+  background-color: rgba(210, 171, 90, .5);
+  padding: 20px 0;
+  margin-top: -65px;
+  .footer__nav{
+    width: 100%;
+    justify-items: center;
   }
-  .footer__nav__title{
-    color: #FAF7F3;
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    line-height: 32px;
-    word-wrap: break-word;
-    margin-left: 38px;
-
-    &::before{
-      content: '';
-
-      width: 18px;
-      height: 18px;
-      display: inline-block;
-      position: absolute;
-    }
+  ul{
+    flex-direction: row;
+    gap:20px;
   }
-  img.footer__logo__img{
-    margin-left: -18px;
-  }
-  .footer__logo__img{
-    img{
-      margin-left: -18px;
-    }
-    &::before {
-      content: '';
-
-      width: 18px;
-      height: 18px;
-      display: block;
-      position: absolute;
-    }
-  }
-  ul.footer-menu {
-    row-gap: 13px;
-    li a {
-      color: white;
-      font-size: 16px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      line-height: 32px;
-      word-wrap: break-word;
-      text-decoration: none;
-    }
-  }
-  .footer__copy{
-    color: white;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    line-height: 32px;
-    word-wrap: break-word;
-    opacity: 0.50;
-    margin-left: -10px;
-    margin-top: -8px;
-  }
-  .copy__mobile{
-    display: none;
-  }
-  ul#footer-the-legals {
-    gap: 13px;
-  }
-  ul#Footer-Shop-here {
-    gap:10px;
-  }
-  .menu-footer-the-legals-container{
-    margin-left: 6px;
-    margin-top: -6px;
-  }
-  .menu-footer-shop-here-container {
-    margin-left: -51px;
-    margin-top: -8px;
-  }
-  .shop__here_title {
-    margin-left: -17px;
-    margin-top: -4px;
-  }
-  .the__legals_title {
-    margin-left: 38px;
+  .nav-link{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.833vw;
+    color: #fff;
   }
 }
 
 @media only screen and (max-width: 1440px) and (min-width: 900px){}
 @media only screen and (max-width: 900px){
   .footer{
-    padding-left: 30px;
-    padding-bottom: 74px;
-    .copy__mobile{
-      display: block;
-    }
-    .copy__desktop{
-      display: none;
-    }
-    .the__legals_title {
-      margin-left: -17px;
-      margin-top: -4px;
-    }
-    .menu-footer-the-legals-container {
-      margin-left: -51px;
-      margin-top: -8px;
-    }
+
   }
 }

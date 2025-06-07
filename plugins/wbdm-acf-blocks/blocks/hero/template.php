@@ -12,7 +12,7 @@
         <div class="container wbdm-hero-container">
             <div class="row">
                 <div class="col-5 offset-1">
-                    <div class="wbdm-text-container">
+                    <div class="wbdm-text-container" data-aos="zoom-in-up">
                         <h1 class="wbdm-text__title"><?php echo $title; ?></h1>
                         <h2 class="wbdm-text__subtitle"><?php echo $subtitle; ?></h2>
                     </div>

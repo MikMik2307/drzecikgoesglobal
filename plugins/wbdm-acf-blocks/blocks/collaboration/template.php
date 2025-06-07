@@ -12,7 +12,7 @@
     $wrapper_attributes = get_block_wrapper_attributes();
 ?>
 <section id="<?php echo $anchor; ?>" <?php echo $wrapper_attributes; ?>>
-        <div class="container" <?php if($overlay_img) echo 'style="background-image:url('.esc_url($overlay_img).'); background-size:100%; background-repeat: no-repeat; background-position: center;"'; ?>>
+        <div class="container" <?php if($overlay_img) echo 'style="background-image:url('.esc_url($overlay_img).'); background-size:100%; background-repeat: no-repeat; background-position-y: 60%;"'; ?>>
             <div class="row">
                 <div class="col-12">
                     <div class="wbdm-collaboration-title-container">

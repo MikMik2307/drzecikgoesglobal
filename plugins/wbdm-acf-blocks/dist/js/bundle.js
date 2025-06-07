@@ -188,6 +188,9 @@ var __webpack_exports__ = {};
 /* harmony import */ var _blocks_collaboration_script__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_collaboration_script__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _blocks_featured_companies_script__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(352);
 /* harmony import */ var _blocks_featured_companies_script__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_blocks_featured_companies_script__WEBPACK_IMPORTED_MODULE_4__);
+document.addEventListener('DOMContentLoaded', function () {
+  AOS.init();
+});
 
 
 

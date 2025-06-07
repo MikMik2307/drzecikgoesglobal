@@ -24,6 +24,10 @@ module.exports = function (env) {
           }
         },
         {
+          test: /\.css$/i,
+          use: [MiniCssExtractPlugin.loader, 'css-loader']
+        },
+        {
           test: /\.scss$/,
           use: [
             MiniCssExtractPlugin.loader,
