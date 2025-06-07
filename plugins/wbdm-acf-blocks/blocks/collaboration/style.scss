@@ -1,0 +1,93 @@
+@import 'src/sass/variables';
+
+.wp-block-wbdm-collaboration {
+  background-color: #242424;
+  padding: 100px 0;
+  .wbdm-collaboration-title__text{
+    font-family: $fontFamily;
+    color: $mainColor;
+    font-size: 3.333vw;
+    font-weight: 800;
+    line-height: 125%;
+    text-align: center;
+  }
+  .wbdm-collaboration-content-container {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wbdm-collaboration-content-container__col {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .wbdm-collaboration-textarea-container,
+  .wbdm-collaboration-contactarea-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+    .wbdm-collaboration-textarea-container{
+    .wbdm-collaboration-textarea-subtitle{
+      font-family: $fontFamilyAdditional;
+      color: $additionalColorWhite;
+      font-size: 1.667vw;
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+    .wbdm-collaboration-textarea__text{
+      font-family: $fontFamilyAdditional;
+      color: $mainColor;
+      font-size: 1.111vw;
+      font-weight: 200;
+      text-align: center;
+    }
+    .wbdm-collaboration-textarea__email{
+      font-family: $fontFamilyAdditional;
+      color: $additionalColorWhite;
+      font-size: 1.667vw;
+      font-weight: 200;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+  .wbdm-collaboration-contactarea-container{
+    .wbdm-collaboration-contactarea-subtitle{
+      font-family: $fontFamilyAdditional;
+      color: $additionalColorWhite;
+      font-size: 1.667vw;
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+  }
+  label{
+    width: 80%;
+  }
+  textarea{
+    height: 250px !important;
+  }
+  input,textarea{
+    background: $additionalColorWhite;
+    border-radius: 20px;
+    font-size: 1.389vw;
+    font-weight: 200;
+    font-family: $fontFamilyAdditional;
+    padding: 15px;
+    width: 80%;
+  }
+  input[type="submit"]{
+    background: $mainColor;
+    border-radius: 50px;
+    font-size: 1.667vw;
+    font-weight: 800;
+    color: #242424;
+    width: 64%;
+  }
+  .wpcf7-spinner{
+    display: none;
+  }
+}

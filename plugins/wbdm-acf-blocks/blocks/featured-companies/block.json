@@ -1,0 +1,27 @@
+{
+  "name": "wbdm/featured-companies",
+  "title": "Featured Companies ACF block",
+  "description": "Featured Companies ACF block",
+  "category": "formatting",
+  "icon": "text-page",
+  "keywords": ["featured Companies"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "template.php"
+  },
+  "supports": {
+    "color": {
+      "text": true,
+      "background": false
+    },
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "attributes": {
+    "fontSize": {
+      "type": "string",
+      "default": "20px"
+    }
+  }
+}

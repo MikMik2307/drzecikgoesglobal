@@ -1,6 +1,20 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 113:
+/***/ (() => {
+
+jQuery(document).ready(function ($) {});
+
+/***/ }),
+
+/***/ 352:
+/***/ (() => {
+
+jQuery(document).ready(function ($) {});
+
+/***/ }),
+
 /***/ 140:
 /***/ (() => {
 
@@ -145,6 +159,12 @@ var __webpack_exports__ = {};
 /* harmony import */ var _blocks_socials_script__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_socials_script__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _blocks_featured_youtube_script__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(140);
 /* harmony import */ var _blocks_featured_youtube_script__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_blocks_featured_youtube_script__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _blocks_collaboration_script__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(113);
+/* harmony import */ var _blocks_collaboration_script__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_collaboration_script__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _blocks_featured_companies_script__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(352);
+/* harmony import */ var _blocks_featured_companies_script__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_blocks_featured_companies_script__WEBPACK_IMPORTED_MODULE_4__);
+
+
 
 
 

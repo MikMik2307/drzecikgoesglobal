@@ -5,4 +5,6 @@ require __DIR__ . '/blocks/about/block.php';
 require __DIR__ . '/blocks/socials/block.php';
 require __DIR__ . '/blocks/featured-tiktoks/block.php';
 require __DIR__ . '/blocks/featured-youtube/block.php';
+require __DIR__ . '/blocks/collaboration/block.php';
+require __DIR__ . '/blocks/featured-companies/block.php';
 
