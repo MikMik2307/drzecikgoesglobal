@@ -16,23 +16,23 @@
             <div class="row">
                 <div class="col-12">
                     <div class="wbdm-collaboration-title-container">
-                        <h2 class="wbdm-collaboration-title__text"><?php echo $title; ?></h2>
+                        <h2 class="wbdm-collaboration-title__text" data-aos="fade-up"><?php echo $title; ?></h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="wbdm-collaboration-content-container">
-                    <div class="col-6 wbdm-collaboration-content-container__col">
-                        <div class="wbdm-collaboration-textarea-container">
+                    <div class="col-12 col-lg-6 wbdm-collaboration-content-container__col">
+                        <div class="wbdm-collaboration-textarea-container" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-out">
                             <h3 class="wbdm-collaboration-textarea-subtitle"><?php echo $subtitle_text_area; ?></h3>
                             <div class="wbdm-collaboration-textarea__text">
                                 <?php echo wp_kses_post($text_text_area); ?>
                             </div>
-                            <a class="wbdm-collaboration-textarea__email" href="mailto:<?php echo $email_address;?>" target="_blank"><?php echo $email_address;?></a>
+                            <p class="wbdm-collaboration-textarea__email"><?php echo $email_address;?></p>
                         </div>
                     </div>
-                    <div class="col-6 wbdm-collaboration-content-container__col">
-                        <div class="wbdm-collaboration-contactarea-container">
+                    <div class="col-12 col-lg-6 wbdm-collaboration-content-container__col">
+                        <div class="wbdm-collaboration-contactarea-container" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-out">
                             <h3 class="wbdm-collaboration-contactarea-subtitle"><?php echo $subtitle_contact_area; ?></h3>
                             <?php
                             if ($contact_form) {

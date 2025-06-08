@@ -45,6 +45,27 @@
       font-size: 1.111vw;
       font-weight: 200;
       text-align: center;
+      ul{
+        margin: 30px 0px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      li{
+        list-style: none !important;
+        &::before{
+          content: '';
+          display: inline-block;
+          background-image: url('/img/check-solid.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 25px;  // adjust as needed
+          height: 25px; // adjust as needed
+          margin-right: 10px; // space between icon and text
+          vertical-align: middle;
+        }
+      }
+
     }
     .wbdm-collaboration-textarea__email{
       font-family: $fontFamilyAdditional;
@@ -87,8 +108,23 @@
     color: #242424;
     width: 64%;
     text-transform: uppercase;
+    transition-duration: 0.2s;
+    &:hover{
+      color: #fff;
+      transition-duration: 0.2s;
+    }
   }
   .wpcf7-spinner{
     display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wp-block-wbdm-collaboration {
+    .wbdm-collaboration-content-container__col{
+      flex: unset;
+    }
+    .wpcf7{
+      width: 100%;
+    }
   }
 }

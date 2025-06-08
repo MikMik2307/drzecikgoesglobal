@@ -18,8 +18,8 @@ $social_profiles = get_field('social_media_profile');
                                 $text  = esc_html($profile['text']);
 
                                 ?>
-                                <div class="col-4">
-                                    <div class="wbdm-socialmedia-tile">
+                                <div class="col-lg-4 col-12">
+                                    <div class="wbdm-socialmedia-tile" data-aos="flip-left"  data-aos-delay="200">
                                         <?php if ($image): ?>
                                             <img src="<?php echo $image; ?>" alt="<?php echo $text; ?>" class="wbdm-socialmedia-tile__img" />
                                         <?php endif; ?>

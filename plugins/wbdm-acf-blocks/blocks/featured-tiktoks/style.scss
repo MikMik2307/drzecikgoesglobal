@@ -18,7 +18,8 @@
   }
   .tiktok-embed {
     width: 320px !important;   /* fixed width */
-    height: 760px !important;  /* fixed height */
+    height: 620px !important;
+    max-height: 620px !important;  /* fixed height */
     max-width: none !important; /* override any max-width */
     min-width: none !important; /* override any min-width */
     display: inline-block;
@@ -29,5 +30,18 @@
   .tiktok-thumbnails > div:first-child {
     display: none;
   }
-
+  iframe{
+    height: 620px !important;
+    width: 105% !important;
+  }
+  html{
+    overflow: hidden !important;
+  }
+}
+@media screen and (max-width: 900px){
+  .wp-block-wbdm-featured-tiktoks {
+    .tiktok-thumbnails{
+      flex-direction: column;
+    }
+  }
 }

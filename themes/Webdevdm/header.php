@@ -53,11 +53,6 @@ defined('ABSPATH') || exit;
         <div class="container-header justify-content-between align-items-center">
             <nav id="main-nav" class="header__navbar navbar navbar-expand-xl"
                  aria-labelledby="main-nav-label">
-                <div class="header__logo">
-                    <a href="<?php echo esc_url(get_home_url() . '/'); ?>">
-                        <img src="<?= get_stylesheet_directory_uri() ?>/src/assets/img/MAD-HATTERS.png">
-                    </a>
-                </div>
                 <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="<?php esc_attr_e('Toggle navigation', 'understrap'); ?>">

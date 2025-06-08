@@ -16,3 +16,10 @@
     margin: 80px auto;
   }
 }
+@media screen and (max-width: 900px){
+  .wp-block-wbdm-featured-youtube {
+    .youtube-thumbnails {
+      flex-direction: column;
+    }
+  }
+}

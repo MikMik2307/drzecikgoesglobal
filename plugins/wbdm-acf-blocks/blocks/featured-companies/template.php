@@ -12,7 +12,7 @@ $wrapper_attributes = get_block_wrapper_attributes();
                 <div class="wbdm-logo-carousel-container">
 					<?php if ($title): ?>
                         <div class="wbdm-logo-carousel-title-container">
-                            <h2 class="wbdm-logo-carousel-title__text"><?php echo esc_html($title); ?></h2>
+                            <h2 class="wbdm-logo-carousel-title__text" data-aos="fade-up"><?php echo esc_html($title); ?></h2>
                         </div>
 					<?php endif; ?>
 

@@ -24,3 +24,11 @@
     color: $additionalColorWhite;
   }
 }
+
+@media screen and (max-width: 900px){
+  .wp-block-wbdm-socials {
+    .wbdm-socialmedia-tiles{
+      flex-direction: column;
+    }
+  }
+}

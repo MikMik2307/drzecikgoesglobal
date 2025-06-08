@@ -8,7 +8,7 @@
     $wrapper_attributes = get_block_wrapper_attributes();
 ?>
 <section <?php echo $wrapper_attributes; ?>>
-    <div class="container-fluid" style="background:url(<?php echo esc_url($background_img)?>) <?php echo $background_color?>; background-size: cover; background-repeat: no-repeat; background-position: center; height: 80vh;">
+    <div class="container-fluid" style="background:url(<?php echo esc_url($background_img)?>) <?php echo $background_color?>; background-size: cover; background-repeat: no-repeat; background-position: center; height: 60vh;">
         <div class="container wbdm-hero-container">
             <div class="row">
                 <div class="col-5 offset-1">
